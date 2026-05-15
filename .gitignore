@@ -12,13 +12,6 @@ env/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Dataset 
-data/raw/
-data/processed/
-
-# Model files 
-models/*.pkl
-
 # OS files
 .DS_Store
 Thumbs.db
