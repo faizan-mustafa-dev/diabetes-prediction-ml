@@ -1,8 +1,13 @@
-# 🩺 Diabetes Prediction using Logistic Regression
+# 🩺 Diabetes Prediction using Machine Learning
 
 ## 📌 Overview
 
-This project predicts whether a person has diabetes based on medical data using a Logistic Regression model.
+This project predicts whether a person has diabetes based on medical data using Machine Learning classification algorithms.
+
+The project compares:
+
+- Logistic Regression
+- Gaussian Naive Bayes
 
 ---
 
@@ -24,22 +29,23 @@ This project predicts whether a person has diabetes based on medical data using 
 - Feature scaling
 - SMOTE for class balancing
 - Logistic Regression model training
-- Model evaluation
+- Naive Bayes model training
+- Model evaluation and comparison
 
 ---
 
 ## 📈 Model Performance
 
-- Accuracy: 0.73
-- Precision: 0.60
-- Recall: 0.74
-- F1 Score: 0.66
+| Model               | Accuracy       | Precision      | Recall         | F1 Score       |
+| ------------------- | -------------- | -------------- | -------------- | -------------- |
+| Logistic Regression | 0.73           | 0.60           | 0.74           | 0.66           |
+| Naive Bayes         | Add Your Score | Add Your Score | Add Your Score | Add Your Score |
 
 ---
 
 ## 📁 Project Structure
 
-```
+```bash
 diabetes-prediction-ml/
 │
 ├── data/
@@ -51,12 +57,22 @@ diabetes-prediction-ml/
 │   └── 02_model_training.ipynb
 │
 ├── models/
-│   └── logistic_regression_model.pkl
+│   ├── logistic_regression_model.pkl
+│   └── naive_bayes_model.pkl
 │
 ├── reports/
 │   ├── figures/
-│   ├── classification_report.txt
-│   └── model_metrics.txt
+│   │   ├── confusion_matrix_lr.png
+│   │   ├── confusion_matrix_nb.png
+│   │   ├── correlation_heatmap.png
+│   │   ├── feature_distribution.png
+│   │   └── model_comparison.png
+│   │
+│   ├── lr_classification_report.txt
+│   ├── lr_model_metrics.txt
+│   ├── model_comparison.csv
+│   ├── nb_classification_report.txt
+│   └── nb_model_metrics.txt
 │
 ├── requirements.txt
 ├── README.md
@@ -85,11 +101,11 @@ pip install -r requirements.txt
 
 Then open notebooks:
 
-- 01_eda.ipynb
-- 02_model_training.ipynb
+- `01_eda.ipynb`
+- `02_model_training.ipynb`
 
 ---
 
 ## 🎯 Goal
 
-To understand a complete machine learning workflow using Logistic Regression.
+To understand a complete machine learning workflow and compare classification algorithms on a real-world medical dataset.
